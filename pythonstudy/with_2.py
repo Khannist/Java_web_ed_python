@@ -10,10 +10,14 @@ score_file.write("과학 : 80")
 score_file.write("\n코딩 : 100")
 score_file.close()
 
+print(1)
+
 score_file = open("score.txt", "r", encoding="utf-8")
 print(score_file.read())
 score_file.close()
 
+print(2)
+
 score_file = open("score.txt", "r", encoding="utf-8")
 print(score_file.readline())
 print(score_file.readline())
@@ -23,7 +27,11 @@ print(score_file.readline(), end="")
 print(score_file.readline(), end="")
 score_file.close()
 
+print("\n3")
+
 print()
+
+print(4)
 
 # 파일이 몇줄 인지 모를 때
 score_file = open("score.txt", "r", encoding="utf-8")
@@ -33,6 +41,8 @@ while True:
         break
     print(line, end="")
 score_file.close()
+
+print("\n5\n")
 
 # list 형태로 저장
 score_file = open("score.txt", "r", encoding="utf-8")

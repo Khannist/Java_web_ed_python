@@ -21,17 +21,17 @@ def Odr():
 
 def InName():
     while True:
-        Isu = int(input("주문하실 수량을 입력해주세요 : "))
-        if Isu <= 30:
-            print(f"주문하실 상품의 수량은 {Isu} 박스(팩)입니다.\n")
+        ISu = int(input("주문하실 수량을 입력해주세요 : "))
+        if ISu <= 30:
+            print(f"주문하실 상품의 수량은 {ISu} 박스(팩)입니다.\n")
 
             print("="*5 + "주문내역" + "="*5)
             print("상품명".ljust(5),"수량".rjust(7))
-            print("{:<5}{:>10}".format(Sname, Isu))
+            print("{:<5}{:>10}".format(Sname, ISu))
             print("-"*18)
-            print("결제가격 : ",list.get(Sname) * Isu)
+            print("결제가격 : ",list.get(Sname) * ISu)
             print("="*18)
-            return Isu
+            return ISu
         else:
             print("재고가 부족합니다. 수량을 다시 입력해주세요.")
             
@@ -56,8 +56,8 @@ for item in list:
 
 while True:
     if endcd == True:
-        Bodr = Odr()
-        if Bodr == 1:
+        BOdr = Odr()
+        if BOdr == 1:
             while True:
                 Sname = input("주문할 상품명을 입력하세요 : ")
                 if Sname in list:            
